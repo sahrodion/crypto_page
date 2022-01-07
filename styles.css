@@ -110,17 +110,19 @@ a{
     border: 1px solid  rgba(255, 255, 255, 0.178);;
     background: none;
     margin-right: 25px;
+    color: white;
+    padding: 0 14px;
+    font-size: 13px;
+    animation: change-color ease-in 5s 0s forwards infinite;
+}
+#form::placeholder{
+    font-family: 'Nunito Sans', sans-serif;
+
 }
 
-#form-label{
-    position: absolute;
-    left: 0;
-    color: #ffffff2d;
-    font-size: 16px;
-    font-family: 'Nunito Sans', sans-serif;
-    padding: 14px;
-    padding-left: 20px;
-}
+
+
+
 
 #login{
     width: 150px;
@@ -135,4 +137,27 @@ a{
     font-size: 13px;
     font-weight: 700;
     text-transform: uppercase;
+}
+
+
+
+
+
+
+@keyframes change-color {
+    10% {
+        color: red;
+}
+
+    30%{
+        color:white;
+    }
+
+    70%{
+        color:blue;
+    }
+
+    100%{
+        color:pink;
+    }
 }
